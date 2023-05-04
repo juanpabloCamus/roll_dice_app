@@ -12,22 +12,27 @@ const gradient = LinearGradient(
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: gradient,
-          ),
-          child: const Center(
-            child: Text(
-              'Hello World!',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 28,
-              ),
-            ),
+      home: Scaffold(body: GradientContainer()),
+    ),
+  );
+}
+
+class GradientContainer extends StatelessWidget {
+  @override
+  Widget build(context) {
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: gradient,
+      ),
+      child: const Center(
+        child: Text(
+          'Hello World!',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 28,
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
