@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roll_dice_app/styled_text.dart';
 
 const gradient = LinearGradient(
   colors: [
@@ -19,13 +20,7 @@ class GradientContainer extends StatelessWidget {
         gradient: gradient,
       ),
       child: const Center(
-        child: Text(
-          'Hello World!',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 28,
-          ),
-        ),
+        child: StyledText('PASANDO PROPSS'),
       ),
     );
   }
